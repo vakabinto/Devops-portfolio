@@ -1,0 +1,16 @@
+---
+appversion: v1
+kind: pod
+metadata:
+    name: kubapp
+    label:
+      app: kubapp
+
+spec:
+    containers: 
+        - name: kubAppCon
+          image: tomcat:latest
+          port:
+            - name: containerPort
+              containerPort: 8080
+
