@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world-kb
+  name: helloworld-lb-kb
 spec:
   type: LoadBalancer
   ports:
