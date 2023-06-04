@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vpro-app
+spec:
+  selector:
+    matchLabels:
+       run: vpro-app
+  replicas: 1
+  template:
+    metadata:
+      labels: 
+        run: vpro-app
+    spec:
+      containers:
+      - name: vpro-app
+        image: tomcat:latest
+        ports:
+        - containerPort: 8080
